@@ -69,3 +69,7 @@ console.log("Winter came for " + "the House of Frey.")
 console.log(String.fromCharCode(126));
 console.log(String.fromCharCode(94));
 console.log(String.fromCharCode(37));
+
+//19. Создайте переменную с именем motto и содержимым What Is Dead May Never Die!. Распечатайте содержимое переменной.
+let motto = 'What Is Dead May Never Die!'
+console.log(motto)
