@@ -12,3 +12,6 @@ console.log("Robert");
 console.log("Stannis");
 console.log("Renly");
 
+//4.Просто тренировка. Выведите на экран число 9780262531962.
+console.log(9780262531962)
+
