@@ -63,3 +63,9 @@ console.log('- Did Joffrey agree?\n- He did. He also said "I love using \\n".');
 Winter came for the House of Frey. 
 используя конкатенацию слов.*/
 console.log("Winter came for " + "the House of Frey.")
+
+
+//18. Найдите в интернете таблицу кодов ASCII и выведите на экран символы ~, ^ и % (каждый на своей собственной строке).
+console.log(String.fromCharCode(126));
+console.log(String.fromCharCode(94));
+console.log(String.fromCharCode(37));
