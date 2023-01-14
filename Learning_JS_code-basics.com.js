@@ -91,3 +91,15 @@ let pet = 'Dragon';
 console.log(family);
 console.log('and');
 console.log(pet);
+
+/*23. Напишите программу, которая берет исходное количество евро, записанное в переменную eurosCount, переводит евро в доллары и выводит на экран.
+Затем полученное значение переводит в рубли и выводит на новой строчке.
+Считаем, что:
+- 1 евро = 1.25 долларов
+- 1 доллар = 60 рублей*/
+let eurosCount = 100;
+let dollarsCount = eurosCount * 1.25;
+console.log(dollarsCount)
+let rublesCount = dollarsCount * 60;
+console.log(rublesCount)
+
