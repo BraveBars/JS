@@ -115,5 +115,11 @@ let info = "We couldn't verify your mother's maiden name.";
 let intro = 'Here is important information about your account security.';
 let firstName = 'Joffrey';
 let greeting = 'Hello';
-console.log(greeting + ', ' + firstName + '!')
-console.log(intro + '\n' + info)
+console.log(greeting + ', ' + firstName + '!');
+console.log(intro + '\n' + info);
+
+/*25. Cоздайте две переменные с именами «первое число» и «второе число» на английском языке, используя lowerCamelCase.
+Запишите в первую переменную число 11, во вторую — -100. Выведите на экран произведение чисел, записанных в получившихся переменных.*/
+let firstNumber = 11;
+let secondNumber = -100;
+console.log(firstNumber * secondNumber);
