@@ -3,3 +3,12 @@ console.log('Hello, World!');
 
 //2. Создайте однострочный комментарий с текстом: You know nothing, Jon Snow!.
 // You know nothing, Jon Snow!
+
+/*3. Выведите на экран друг за другом три имени: Robert, Stannis, Renly. В результате на экране должно отобразиться:
+Robert
+Stannis
+Renly*/
+console.log("Robert");
+console.log("Stannis");
+console.log("Renly");
+
