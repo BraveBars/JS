@@ -123,3 +123,15 @@ console.log(intro + '\n' + info);
 let firstNumber = 11;
 let secondNumber = -100;
 console.log(firstNumber * secondNumber);
+
+/*26. Вы столкнулись с таким кодом, который выводит на экран общее количество комнат во владении нынешнего короля:
+let king = 'King Balon the 6th';
+console.log(king + ' has ' + (6 * 17) + ' rooms.');
+Избавьтесь от магических чисел, создав новые переменные, и выведите текст на экран.
+Получится так:
+King Balon the 6th has 102 rooms.
+Названия переменных должны передавать смысл чисел, но должны при этом оставаться достаточно короткими и ёмкими для комфортного чтения.*/
+let king = 'King Balon the 6th';
+let floorsInTheCastle = 6;
+let roomsInTheCastle = 17;
+console.log(king + " has " + floorsInTheCastle * roomsInTheCastle + ' rooms. ');
