@@ -13,7 +13,7 @@ console.log("Stannis");
 console.log("Renly");
 
 //4.Просто тренировка. Выведите на экран число 9780262531962.
-console.log(9780262531962)
+console.log(9780262531962);
 
 //5. Выведите на экран What Is Dead May Never Die
 console.log("What Is Dead May Never Die");
@@ -34,7 +34,7 @@ console.log(8 / 2 + 5 - -3 / 2);
 
 /*10. Дано выражение 70 * 3 + 4 / 8 + 2.
 Расставьте скобки так, чтобы оба сложения (3 + 4) и (8 + 2) высчитывались в первую очередь. Выведите результат на экран.*/
-console.log(70 * (3 + 4) / (8 + 2))
+console.log(70 * (3 + 4) / (8 + 2));
 
 //11. Вычислите и выведите на экран произведение двух чисел: 0.39 и 0.22
 console.log(0.39 * 0.22);
@@ -51,7 +51,7 @@ console.log((5 ** 2) - (3 * 7));
 
 /*15. Напишите программу, которая выведет на экран:
 "Khal Drogo's favorite word is "athjahakar""*/
-console.log('"Khal Drogo\'\s favorite word is "athjahakar""')
+console.log('"Khal Drogo\'\s favorite word is "athjahakar""');
 
 /*16.Напишите программу, которая выводит на экран:
 - Did Joffrey agree?
@@ -62,7 +62,7 @@ console.log('- Did Joffrey agree?\n- He did. He also said "I love using \\n".');
 /*17. Выведите на экран 
 Winter came for the House of Frey. 
 используя конкатенацию слов.*/
-console.log("Winter came for " + "the House of Frey.")
+console.log("Winter came for " + "the House of Frey.");
 
 
 //18. Найдите в интернете таблицу кодов ASCII и выведите на экран символы ~, ^ и % (каждый на своей собственной строке).
@@ -72,7 +72,7 @@ console.log(String.fromCharCode(37));
 
 //19. Создайте переменную с именем motto и содержимым What Is Dead May Never Die!. Распечатайте содержимое переменной.
 let motto = 'What Is Dead May Never Die!'
-console.log(motto)
+console.log(motto);
 
 /*20. В упражнении определена переменная, внутри которой находится строка. 
 Переопределите значение этой переменной и присвойте ей ту же строку, но в перевернутом виде, 
@@ -80,3 +80,8 @@ console.log(motto)
 let name = 'Brienna';
 name = 'anneirB';
 console.log(name);
+
+//21. Создайте переменную, описывающую дословно "количество моих братьев", и присвойте ей значение 2. Распечатайте содержимое переменной.
+let theNumberOfMyBrothers = 2;
+console.log(theNumberOfMyBrothers);
+
