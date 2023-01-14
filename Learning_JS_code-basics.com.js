@@ -139,3 +139,10 @@ console.log(king + " has " + floorsInTheCastle * roomsInTheCastle + ' rooms. ');
 //27.Создайте константу army, присвойте ей значение the white walkers и распечатайте её значение на экран.
 const army = "the white walkers";
 console.log(army);
+
+/*28.Выведите на экран строку Do you want to eat, <name>?, где вместо <name> должна использоваться константа stark. 
+Вывод должен получиться таким:
+Do you want to eat, Arya?*/
+const stark = 'Arya';
+const sentence = 'Do you want to eat';
+console.log(`${sentence}, ${stark}?`);
