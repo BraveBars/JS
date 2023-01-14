@@ -85,3 +85,9 @@ console.log(name);
 let theNumberOfMyBrothers = 2;
 console.log(theNumberOfMyBrothers);
 
+//22. Найдите в программе необъявленную переменную и объявите ее, присвоив ей значение 'Dragon'.
+let family = 'Targaryen';
+let pet = 'Dragon';
+console.log(family);
+console.log('and');
+console.log(pet);
