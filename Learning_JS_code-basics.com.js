@@ -133,8 +133,8 @@ King Balon the 6th has 102 rooms.
 Названия переменных должны передавать смысл чисел, но должны при этом оставаться достаточно короткими и ёмкими для комфортного чтения.*/
 let king = 'King Balon the 6th';
 let floorsInTheCastle = 6;
-let roomsInTheCastle = 17;
-console.log(king + " has " + floorsInTheCastle * roomsInTheCastle + ' rooms. ');
+let roomsOnTheFloor = 17;
+console.log(king + " has " + floorsInTheCastle * roomsOnTheFloor + ' rooms. ');
 
 //27. Создайте константу army, присвойте ей значение the white walkers и распечатайте её значение на экран.
 const army = "the white walkers";
