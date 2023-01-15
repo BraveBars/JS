@@ -148,8 +148,8 @@ const sentence = 'Do you want to eat';
 console.log(`${sentence}, ${stark}?`);
 
 //29.Выведите на экран последний символ строки, находящейся в константе name
-const name = 'Na\nharis';
-console.log(name[7]);
+const name2 = 'Na\nharis';
+console.log(name2[7]);
 
 //30. Выведите на экран число -0.304.
 console.log(-0.304);
@@ -187,3 +187,7 @@ console.log(Math.abs(soldiersCount));
 //36. Напишите программу, которая использует функцию Math.ceil() с константой number и выводит результат на экран.
 const number = 923.2238;
 console.log(Math.ceil(number));
+
+//37. Округлите число, записанное в константу number, до двух знаков после запятой и выведите результат на экран.
+const number2 = 10.1234;
+console.log(number2.toFixed(2));
