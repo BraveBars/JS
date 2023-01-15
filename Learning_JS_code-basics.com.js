@@ -178,3 +178,8 @@ console.log('7' - (-8 - -2));
 const company1 = 'Apple';
 const company2 = 'Samsung';
 console.log(company1.length + company2.length);
+
+/*35. Выведите на экран абсолютное значение числа, находящегося в константе soldiersCount, используя функцию Math.abs(). 
+Эта функция возвращает абсолютное значение переданного числа. Абсолютное значения числа — это само это число без знака перед ним.*/
+const soldiersCount = -2309;
+console.log(Math.abs(soldiersCount));
