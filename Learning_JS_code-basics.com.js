@@ -183,3 +183,7 @@ console.log(company1.length + company2.length);
 Эта функция возвращает абсолютное значение переданного числа. Абсолютное значения числа — это само это число без знака перед ним.*/
 const soldiersCount = -2309;
 console.log(Math.abs(soldiersCount));
+
+//36. Напишите программу, которая использует функцию Math.ceil() с константой number и выводит результат на экран.
+const number = 923.2238;
+console.log(Math.ceil(number));
