@@ -136,11 +136,11 @@ let floorsInTheCastle = 6;
 let roomsInTheCastle = 17;
 console.log(king + " has " + floorsInTheCastle * roomsInTheCastle + ' rooms. ');
 
-//27.Создайте константу army, присвойте ей значение the white walkers и распечатайте её значение на экран.
+//27. Создайте константу army, присвойте ей значение the white walkers и распечатайте её значение на экран.
 const army = "the white walkers";
 console.log(army);
 
-/*28.Выведите на экран строку Do you want to eat, <name>?, где вместо <name> должна использоваться константа stark. 
+/*28. Выведите на экран строку Do you want to eat, <name>?, где вместо <name> должна использоваться константа stark. 
 Вывод должен получиться таким:
 Do you want to eat, Arya? */
 const stark = 'Arya';
@@ -151,5 +151,5 @@ console.log(`${sentence}, ${stark}?`);
 const name = 'Na\nharis';
 console.log(name[7])
 
-
-
+//30. Выведите на экран число -0.304.
+console.log(-0.304)
