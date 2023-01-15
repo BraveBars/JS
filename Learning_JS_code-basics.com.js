@@ -142,7 +142,14 @@ console.log(army);
 
 /*28.Выведите на экран строку Do you want to eat, <name>?, где вместо <name> должна использоваться константа stark. 
 Вывод должен получиться таким:
-Do you want to eat, Arya?*/
+Do you want to eat, Arya? */
 const stark = 'Arya';
 const sentence = 'Do you want to eat';
 console.log(`${sentence}, ${stark}?`);
+
+//29.Выведите на экран последний символ строки, находящейся в константе name
+const name = 'Na\nharis';
+console.log(name[7])
+
+
+
