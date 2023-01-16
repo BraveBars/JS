@@ -227,3 +227,10 @@ console.log(text3.toLowerCase());
 //44. Обновите переменную firstName записав в неё то же самое значение, но обработанное методом .trim(). Распечатайте то, что получилось, на экран.
 let firstName2 = '  Grigor   \n';
 console.log(firstName2.trim());
+
+/*45.Выведите на экран первую и последнюю буквы предложения, записанного в константу text, в следующем формате:
+First: N
+Last: t
+Ваша задача извлечь эти символы из строки и вставить в console.log(), не используя промежуточные переменные.*/
+const text4 = 'Never forget what you are, for surely the world will not';
+console.log(`First: ${text4[0]}\nLast: ${text4[text4.length -1]}`);
