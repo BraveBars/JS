@@ -198,5 +198,9 @@ Last: t
 Постарайтесь создать только одну константу, в которую сразу запишется нужный текст перед печатью на экран. 
 В этом уроке мы отрабатываем умение собирать составное выражение.*/
 const text = 'Never forget what you are, for surely the world will not';
-const result = `First: ${text[0]}\nLast: ${text[text.length - 1]}`
-console.log(result)
+const result = `First: ${text[0]}\nLast: ${text[text.length - 1]}`;
+console.log(result);
+
+/*39. Посчитайте программно (а не в голове) минимальное число среди 3, 10, 22, -3, 0 — и выведите его на экран. 
+Воспользуйтесь функцией Math.min(), которая работает аналогично Math.max().*/
+console.log(Math.min(3, 10, 22,-3, 0));
