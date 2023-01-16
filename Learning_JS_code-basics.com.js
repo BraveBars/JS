@@ -238,5 +238,11 @@ console.log(`First: ${text4[0]}\nLast: ${text4[text4.length -1]}`);
 /*46. С помощью метода slice() получите часть предложения, записанного в константу text, c 5 по 15 символы включительно. 
 Полученную подстроку обработайте методом .trim() и выведите на экран длину итоговой подстроки. 
 Выполните эти методы подряд в цепочке без создания промежуточных переменных.*/
-const text = 'When \t\n you play a \t\n game of thrones you win or you die.';
-console.log(text.slice(5, 15).trim().length);
+const text5 = 'When \t\n you play a \t\n game of thrones you win or you die.';
+console.log(text5.slice(5, 15).trim().length);
+
+//47. Реализуйте функцию с именем printMotto(), которая выведет на экран фразу Winter is coming.
+const printMotto = () =>{
+  console.log("Winter is coming");
+}
+printMotto();
