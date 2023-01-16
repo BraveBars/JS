@@ -219,3 +219,7 @@ console.log(typeof motto2);
 //42. Напечатайте на экран длину строки text.
 const text2 = 'a mind needs books as a sword needs a whetstone, if it is to keep its edge.';
 console.log(text2.length);
+
+//43. Приведите строку text к нижнему регистру и напечатайте её на экран.
+const text3 = 'a MIND needs Books as a Sword needS a WHETSTONE, if it is to keep its edge.';
+console.log(text3.toLowerCase());
