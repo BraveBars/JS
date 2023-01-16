@@ -223,3 +223,7 @@ console.log(text2.length);
 //43. Приведите строку text к нижнему регистру и напечатайте её на экран.
 const text3 = 'a MIND needs Books as a Sword needS a WHETSTONE, if it is to keep its edge.';
 console.log(text3.toLowerCase());
+
+//44. Обновите переменную firstName записав в неё то же самое значение, но обработанное методом .trim(). Распечатайте то, что получилось, на экран.
+let firstName2 = '  Grigor   \n';
+console.log(firstName2.trim());
