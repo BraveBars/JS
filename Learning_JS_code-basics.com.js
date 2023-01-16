@@ -213,5 +213,9 @@ console.log(Math.round(Math.random() * 10));
 
 /*41. Оператор typeof позволяет определить тип передаваемого операнда. Название типа возвращается в виде строки.
 Выведите на экран тип значения константы motto.*/
-const motto = 'Family, Duty, Honor';
-console.log(typeof motto);
+const motto2 = 'Family, Duty, Honor';
+console.log(typeof motto2);
+
+//42. Напечатайте на экран длину строки text.
+const text2 = 'a mind needs books as a sword needs a whetstone, if it is to keep its edge.';
+console.log(text2.length);
