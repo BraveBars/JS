@@ -234,3 +234,9 @@ Last: t
 Ваша задача извлечь эти символы из строки и вставить в console.log(), не используя промежуточные переменные.*/
 const text4 = 'Never forget what you are, for surely the world will not';
 console.log(`First: ${text4[0]}\nLast: ${text4[text4.length -1]}`);
+
+/*46. С помощью метода slice() получите часть предложения, записанного в константу text, c 5 по 15 символы включительно. 
+Полученную подстроку обработайте методом .trim() и выведите на экран длину итоговой подстроки. 
+Выполните эти методы подряд в цепочке без создания промежуточных переменных.*/
+const text = 'When \t\n you play a \t\n game of thrones you win or you die.';
+console.log(text.slice(5, 15).trim().length);
