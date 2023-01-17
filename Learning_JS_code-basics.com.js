@@ -289,3 +289,7 @@ console.log(capitalize('code'));
 Пенсионером считается человек, достигший возраста 60 лет и больше.*/
 const isPensioner = (age) => age >= 60;
 console.log(isPensioner(61));
+
+//53. Напишите функцию isMister(), которая принимает строку и проверяет, является ли она словом 'Mister'.
+const isMister = (text) => text === "Mister";
+console.log(isMister('Mis'));
