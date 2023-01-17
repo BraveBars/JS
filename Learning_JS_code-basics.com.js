@@ -248,7 +248,7 @@ const printMotto = () =>{
 printMotto();
 
 //48. Реализуйте функцию sayHurrayThreeTimes(), которая возвращает строку 'hurray! hurray! hurray!'.
-const sayHurrayThreeTimes = () =>{
+const sayHurrayThreeTimes = () => {
   const hurray = 'hurray!';
   return `${hurray} ${hurray} ${hurray}`;
 };
@@ -264,3 +264,17 @@ const truncate = (text, length) => {
   return reduce;
 };
 
+/*50.Реализуйте функцию getHiddenCard(), которая принимает на вход номер кредитки (состоящий из 16 цифр)
+в виде строки и возвращает его скрытую версию, которая может использоваться на сайте для отображения.
+Если исходная карта имела номер 2034399002125581, то скрытая версия выглядит так ****5581. Другими словами,
+функция заменяет первые 12 символов, на звездочки. Количество звездочек регулируется вторым необязательным параметром. Значение по умолчанию — 4.
+// Кредитка передается внутрь как строка
+getHiddenCard('1234567812345678', 2); // "**5678"
+getHiddenCard('1234567812345678', 3); // "***5678"
+getHiddenCard('1234567812345678');    // "****5678" */
+const getHiddenCard = (cardNumber, stars = 4) => {
+  const starsCount = '*'.repeat(stars);
+  const cardNumberCut = `${cardNumber}`.slice(12);
+  return starsCount + cardNumberCut;
+};
+console.log(getHiddenCard(2034399002125681, 7));
