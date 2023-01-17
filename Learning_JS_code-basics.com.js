@@ -278,3 +278,9 @@ const getHiddenCard = (cardNumber, stars = 4) => {
   return starsCount + cardNumberCut;
 };
 console.log(getHiddenCard(2034399002125681, 7));
+
+/*51. Реализуйте функцию capitalize(), которая принимает непустую строку и приводит первую букву первого слова к верхнему регистру:
+const name = 'arya';
+console.log(capitalize(name)); // => "Arya" */
+const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
+console.log(capitalize('code'));
