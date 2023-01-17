@@ -293,3 +293,7 @@ console.log(isPensioner(61));
 //53. Напишите функцию isMister(), которая принимает строку и проверяет, является ли она словом 'Mister'.
 const isMister = (text) => text === "Mister";
 console.log(isMister('Mis'));
+
+//54. Реализуйте функцию, которая проверяет формат указанного телефона. Если телефон начинается с +, значит это международный формат.
+const isInternationalPhone = (phoneNumber) => phoneNumber[0] === '+';
+console.log(isInternationalPhone('1'));
