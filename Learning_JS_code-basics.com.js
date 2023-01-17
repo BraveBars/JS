@@ -249,6 +249,18 @@ printMotto();
 
 //48. Реализуйте функцию sayHurrayThreeTimes(), которая возвращает строку 'hurray! hurray! hurray!'.
 const sayHurrayThreeTimes = () =>{
-    const hurray = 'hurray!';
-    return `${hurray} ${hurray} ${hurray}`}
-  console.log(sayHurrayThreeTimes())
+  const hurray = 'hurray!';
+  return `${hurray} ${hurray} ${hurray}`;
+};
+console.log(sayHurrayThreeTimes());
+
+/*49. Допишите функцию truncate(), которая обрезает переданную строку до указанного количества символов,
+добавляет в конце многоточие и возвращает получившуюся строку.
+Функция принимает два параметра:
+Строка, которую нужно обрезать
+Число символов, которые нужно оставить*/
+const truncate = (text, length) => {
+  const reduce = `${text.slice(0, length)}...`;
+  return reduce;
+};
+
