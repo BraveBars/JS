@@ -246,3 +246,9 @@ const printMotto = () =>{
   console.log("Winter is coming");
 }
 printMotto();
+
+//48. Реализуйте функцию sayHurrayThreeTimes(), которая возвращает строку 'hurray! hurray! hurray!'.
+const sayHurrayThreeTimes = () =>{
+    const hurray = 'hurray!';
+    return `${hurray} ${hurray} ${hurray}`}
+  console.log(sayHurrayThreeTimes())
