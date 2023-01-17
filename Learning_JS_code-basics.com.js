@@ -284,3 +284,8 @@ const name = 'arya';
 console.log(capitalize(name)); // => "Arya" */
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
 console.log(capitalize('code'));
+
+/*52. Напишите функцию isPensioner(), которая принимает один параметр — возраст человека и проверяет, является ли он пенсионным.
+Пенсионером считается человек, достигший возраста 60 лет и больше.*/
+const isPensioner = (age) => age >= 60;
+console.log(isPensioner(61));
