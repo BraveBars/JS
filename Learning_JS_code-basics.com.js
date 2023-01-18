@@ -375,3 +375,21 @@ const whoIsThisHouseToStarks = (houseName) => {
 console.log(whoIsThisHouseToStarks("Tally"));
 console.log(whoIsThisHouseToStarks("Lannister"));
 console.log(whoIsThisHouseToStarks("Random"));
+
+/*61. Реализуйте функцию convertText(), которая принимает на вход строку и, если первая буква не заглавная,
+возвращает перевернутый вариант исходной строки. Если первая буква заглавная, то строка возвращается без изменений.
+Если на вход передана пустая строка, функция должна вернуть пустую строку.
+Перевернуть строчку можно используя функцию reverse(). В качестве аргумента в неё нужно передать строку, которую мы хотим перевернуть.
+Есть разные подходы к решению этой задачи. Возможно, вам пригодится метод toUpperCase() и возможность получения символа из строки (например, str[0]).*/
+const reverse2 = (s) => s.split('').reverse().join('');
+const convertText = (text) => {
+  if (text === '') {
+    return text;
+  }
+  
+  const reversible = text[0, 0] === text[0, 0].toUpperCase();
+  return reversible ? text : reverse2(text);
+};
+console.log(convertText('Fgvbhjn'));
+console.log(convertText(''));
+console.log(convertText('fgvbhjn'));
