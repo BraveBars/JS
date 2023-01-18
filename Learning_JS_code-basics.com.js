@@ -302,3 +302,14 @@ console.log(isInternationalPhone('1'));
 Год будет високосным, если он кратен (то есть делится без остатка) 400 или он одновременно кратен 4 и не кратен 100.*/
 const isLeapYear = (year) => year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0); 
 console.log(isLeapYear(2015));
+
+/*56. В этом уроке вам нужно будет реализовать две функции isPalindrome() и isNotPalindrome()
+Функция isPalindrome() определяет, является ли слово палиндромом или нет. Палиндром это слово, которое читается одинаково в обоих направлениях.
+Для определения палиндрома необходимо перевернуть строку и сравнить ее с исходной. Для этого воспользуйтесь функцией reverse()
+Функция isNotPalindrome() проверяет что слово НЕ является палиндромом:
+Для этого, вызовите функцию isPalindrome() внутри isNotPalindrome() и примените отрицание.*/
+const reverse = (s) => s.split('').reverse().join('');
+const isPalindrome = (text) => text.toLowerCase() === reverse(text.toLowerCase());
+const isNotPalindrome = (text) => !isPalindrome(text);
+console.log(isPalindrome("Fasaf"));
+console.log(isNotPalindrome("Fasaf"));
