@@ -313,3 +313,8 @@ const isPalindrome = (text) => text.toLowerCase() === reverse(text.toLowerCase()
 const isNotPalindrome = (text) => !isPalindrome(text);
 console.log(isPalindrome("Fasaf"));
 console.log(isNotPalindrome("Fasaf"));
+
+/* 57. Реализуйте функцию getLetter(), которая извлекает из переданной строки указанный 
+символ (по порядковому номеру, а не по его индексу) и возвращает его наружу. Если такого символа нет, то функция возвращает пустую строку.*/
+const getLetter = (text, letter) => text[letter - 1] || '';
+console.log(getLetter('abcdef', 5));
