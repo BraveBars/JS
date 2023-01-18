@@ -289,6 +289,7 @@ console.log(capitalize('code'));
 Пенсионером считается человек, достигший возраста 60 лет и больше.*/
 const isPensioner = (age) => age >= 60;
 console.log(isPensioner(61));
+console.log(isPensioner(51));
 
 //53. Напишите функцию isMister(), которая принимает строку и проверяет, является ли она словом 'Mister'.
 const isMister = (text) => text === "Mister";
@@ -296,12 +297,14 @@ console.log(isMister('Mis'));
 
 //54. Реализуйте функцию, которая проверяет формат указанного телефона. Если телефон начинается с +, значит это международный формат.
 const isInternationalPhone = (phoneNumber) => phoneNumber[0] === '+';
-console.log(isInternationalPhone('1'));
+console.log(isInternationalPhone('123456789'));
+console.log(isInternationalPhone('+123456789'));
 
 /*55. Реализуйте функцию isLeapYear(), которая определяет, является ли год високосным или нет.
 Год будет високосным, если он кратен (то есть делится без остатка) 400 или он одновременно кратен 4 и не кратен 100.*/
 const isLeapYear = (year) => year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0); 
 console.log(isLeapYear(2015));
+console.log(isLeapYear(2016));
 
 /*56. В этом уроке вам нужно будет реализовать две функции isPalindrome() и isNotPalindrome()
 Функция isPalindrome() определяет, является ли слово палиндромом или нет. Палиндром это слово, которое читается одинаково в обоих направлениях.
@@ -318,6 +321,7 @@ console.log(isNotPalindrome("Fasaf"));
 символ (по порядковому номеру, а не по его индексу) и возвращает его наружу. Если такого символа нет, то функция возвращает пустую строку.*/
 const getLetter = (text, position) => text[position - 1] || '';
 console.log(getLetter('abcdef', 5));
+console.log(getLetter('abcdef', 7));
 
 /*58. Реализуйте функцию guessNumber(), которая принимает число и проверяет, равно ли число заданному (пусть это будет 42).
 Если равно, то функция должна вернуть строку 'You win!', в противном случае нужно вернуть строку 'Try again!'.*/
@@ -329,6 +333,7 @@ const guessNumber = (number) => {
   return "Try again!";
 };
 console.log(guessNumber(41));
+console.log(guessNumber(42));
 
 /*59. Реализуйте функцию normalizeUrl(), которая выполняет так называемую нормализацию данных. Она принимает адрес сайта и возвращает его с https:// в начале.
 Функция принимает адреса в виде АДРЕС или https://АДРЕС, но всегда возвращает адрес в виде https://АДРЕС
@@ -345,3 +350,28 @@ const normalizeUrl = (url) => {
   return noramalizedUrl;
 };
 console.log(normalizeUrl("fdfdfwefwef"));
+console.log(normalizeUrl("https://fdfdfwefwef"));
+
+
+/*60 На электронной карте Вестероса, которую реализовал Сэм, союзники Старков отображены зеленым кружком, враги — красным, а нейтральные семьи — серым.
+Напишите для Сэма функцию whoIsThisHouseToStarks(), которая принимает на вход фамилию семьи и возвращает одно из трёх значений: 'friend', 'enemy', 'neutral'.
+Правила определения:
+Друзья ('friend'): 'Karstark', 'Tally'
+Враги ('enemy'): 'Lannister', 'Frey'
+Любые другие семьи считаются нейтральными */
+const whoIsThisHouseToStarks = (houseName) => {
+  let whois;
+
+  if (houseName === "Karstark" || houseName === "Tally") {
+    whois = "friend";
+  } else if (houseName === "Lannister" || houseName === "Frey") {
+    whois = "enemy";
+  } else {
+    whois = "neutral";
+  }
+
+  return whois;
+};
+console.log(whoIsThisHouseToStarks("Tally"));
+console.log(whoIsThisHouseToStarks("Lannister"));
+console.log(whoIsThisHouseToStarks("Random"));
