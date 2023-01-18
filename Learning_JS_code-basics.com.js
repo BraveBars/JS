@@ -316,5 +316,15 @@ console.log(isNotPalindrome("Fasaf"));
 
 /* 57. Реализуйте функцию getLetter(), которая извлекает из переданной строки указанный 
 символ (по порядковому номеру, а не по его индексу) и возвращает его наружу. Если такого символа нет, то функция возвращает пустую строку.*/
-const getLetter = (text, letter) => text[letter - 1] || '';
+const getLetter = (text, position) => text[position - 1] || '';
 console.log(getLetter('abcdef', 5));
+
+/*58. Реализуйте функцию guessNumber(), которая принимает число и проверяет, равно ли число заданному (пусть это будет 42).
+Если равно, то функция должна вернуть строку 'You win!', в противном случае нужно вернуть строку 'Try again!'.*/
+const guessNumber = (number) => {
+  if (number === 42) {
+    return "You win!";
+  }
+  return "Try again!";
+};
+console.log(guessNumber(41));
