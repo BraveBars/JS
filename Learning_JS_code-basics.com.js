@@ -441,12 +441,10 @@ multiplyNumbersFromRange(1, 5); // 1 * 2 * 3 * 4 * 5 = 120      */
 const multiplyNumbersFromRange = (start, finish) => {
   let i = start;
   let prod = 1;
-
   while (i <= finish) {
     prod = prod * i;
     i = i + 1;
   }
-
   return prod;
 };
 console.log(multiplyNumbersFromRange(1, 5));
@@ -456,7 +454,6 @@ joinNumbersFromRange(5, 10); // '5678910'    */
 const joinNumbersFromRange = (start, finish) => {
   let result = "";
   let i = start;
-
   while (i <= finish) {
     result = `${result}${i}`;
     i = i + 1;
@@ -464,3 +461,15 @@ const joinNumbersFromRange = (start, finish) => {
   return result;
 };
 console.log(joinNumbersFromRange(5, 10));
+
+/* 66. Реализуйте функцию printReversedWordBySymbol(), которая печатает переданное слово посимвольно, как в примере из теории, но делает это в обратном порядке.*/
+const printReversedWordBySymbol = (word) => {
+  let i = word.length - 1;
+  while (i >= 0) {
+    console.log(word[i]);
+    i = i - 1;
+  }
+};
+const word = 'Arya';
+printReversedWordBySymbol(word);
+
