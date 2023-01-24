@@ -489,3 +489,51 @@ const countChars = (str, char) => {
 };
 console.log(countChars('HexlEt', 'e'))
 console.log(countChars('HexlEt', 'E'))
+
+// переворот строки
+const reverse3 = (str) => {
+  let i = 0;
+  // Нейтральный элемент для строк это пустая строка
+  let result = '';
+  while (i < str.length) {
+    // Соединяем в обратном порядке
+    result = `${str[i]}${result}`;
+    // То же самое через конкатенацию
+    // result = str[i] + result;
+    i = i + 1;
+  }
+  return result;
+};
+const name3 = 'Bran';
+reverse3(name3); // 'narB'
+console.log(reverse3(name3));
+// Проверка нейтрального элемента
+console.log(reverse3('')); // ''
+
+// 68. Реализуйте функцию even(), которая возвращает новую строку, состоящую из чётных символов исходной строки.
+const even = (str) => {
+  let i = 1;
+  let result = "";
+  while (i < str.length + 1) {
+    if (i % 2 === 0) {
+      result = result + str[i - 1];
+    }
+    i = i + 1;
+  }
+  return result;
+};
+console.log(even("Bran"));
+/* Решение учителя
+const even = (str) => {
+  let i = 0;
+  let result = '';
+  while (i < str.length) {
+    if (i % 2 !== 0) {
+      result = `${result}${str[i]}`;
+    }
+    i = i + 1;
+  }
+
+  return result;
+};
+*/
