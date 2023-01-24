@@ -537,3 +537,22 @@ const even = (str) => {
   return result;
 };
 */
+
+/* 69. Реализуйте функцию filterString(), принимающую на вход строку и символ, и возвращающую новую строку, 
+в которой удален переданный символ во всех его позициях. Регистр символов важен.
+const str = 'If I look back I am lost';
+filterString(str, 'I'); // 'f  look back  am lost'
+filterString('zz Zorro', 'z'); // ' Zorro'   */
+const filterString = (str, symb) => {
+  let i = 0;
+  let result = '';
+  while (i < str.length) {
+    if (str[i] !== symb) {
+      result = result + str[i]
+    }
+    i += 1
+  }
+  return result
+}
+console.log(filterString('If I look back I am lost', 'I'));
+console.log(filterString('zz Zorro', 'z'));
