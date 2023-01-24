@@ -435,3 +435,18 @@ const printNumbers = (initialNumber) => {
   console.log("finished!");
 };
 console.log(printNumbers(9));
+
+/*64. Реализуйте функцию multiplyNumbersFromRange(), которая перемножает числа в указанном диапазоне включая границы диапазона. Пример вызова:
+multiplyNumbersFromRange(1, 5); // 1 * 2 * 3 * 4 * 5 = 120      */
+const multiplyNumbersFromRange = (start, finish) => {
+  let i = start;
+  let prod = 1;
+
+  while (i <= finish) {
+    prod = prod * i;
+    i = i + 1;
+  }
+
+  return prod
+}
+console.log(multiplyNumbersFromRange(1,5));
