@@ -556,3 +556,20 @@ const filterString = (str, symb) => {
 }
 console.log(filterString('If I look back I am lost', 'I'));
 console.log(filterString('zz Zorro', 'z'));
+
+/* 70. Напишите функцию makeItFunny(), которая принимает на вход строку и возвращает её копию, у которой
+каждый n-ный элемент переведен в верхний регистр. n – задается на входе в функцию.*/
+const makeItFunny = (str, n) => {
+  let i = 0;
+  let result = "";
+  while (i < str.length) {
+    if ((i + 1) % n === 0) {
+      result = result + str[i].toUpperCase();
+    } else {
+      result = result + str[i];
+    }
+    i++;
+  }
+  return result;
+};
+console.log(makeItFunny("I never look back", 3));
