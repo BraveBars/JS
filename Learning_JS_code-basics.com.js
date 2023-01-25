@@ -573,3 +573,48 @@ const makeItFunny = (str, n) => {
   return result;
 };
 console.log(makeItFunny("I never look back", 3));
+
+/* 71. Реализуйте функцию hasChar(), которая проверяет (с учётом регистра), содержит ли строка указанную букву. Функция принимает два параметра:
+Строка
+Буква для поиска
+hasChar('Hexlet', 'H'); // true
+hasChar('Hexlet', 'h'); // false   */
+const hasChar = (str, char) => {
+  let i = 0;
+  while (i < str.length) {
+    if (str[i] === char) {
+      return true;
+    }
+    i++;
+  }
+  return false;
+};
+console.log(hasChar('Hexlet', 'H'));
+console.log(hasChar('Hexlet', 'h'));
+
+/* Рассмотрим простой алгоритм проверки простоты числа. Будем делить искомое число x на все числа из диапазона
+от двух до x - 1 и смотреть остаток от деления. Если в этом диапазоне не найден делитель, который делит число x без остатка, значит перед нами простое число.
+ Если задуматься, то можно заметить, что достаточно проверять числа не до x - 1, а до половины числа. Например, 11 не делится на 2, 3, 4, 5.
+Но и дальше гарантированно не будет делиться на числа больше своей половины. Значит, можно провести небольшую оптимизацию и проверять деление только до x / 2.  */
+const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
+
+  let divider = 2;
+
+  while (divider <= number / 2) {
+    if (number % divider === 0) {
+      return false;
+    }
+
+    divider += 1;
+  }
+
+  return true;
+}
+
+isPrime(1); // false
+isPrime(2); // true
+isPrime(3); // true
+isPrime(4); // false
