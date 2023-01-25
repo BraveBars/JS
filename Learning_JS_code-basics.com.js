@@ -618,3 +618,17 @@ isPrime(1); // false
 isPrime(2); // true
 isPrime(3); // true
 isPrime(4); // false
+
+/* 72. Реализуйте функцию encrypt(), которая бы брала текст и переставляла в нем каждые два подряд идущих символа.
+encrypt('move'); // 'omev'
+encrypt('attack'); // 'taatkc'   */
+const encrypt = (str) => {
+  let result = '';
+  for (let i = 0; i < str.length; i += 2) {
+    const nextSymbol = str[i + 1] || '';
+    result = `${result}${nextSymbol}${str[i]}`;
+  }
+
+  return result;
+};
+console.log(encrypt('attack'))
